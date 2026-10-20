@@ -1,0 +1,645 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>ForceHQ | Games</title>
+
+    <link rel="stylesheet" href="game.css" />
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <a href="index.html" class="logo"> ForceHQ </a>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="games.html" class="active">Games</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="info.html">Info</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero-small">FORCEHQ GAME HUB</p>
+
+      <h1>Discover Your Next Game</h1>
+
+      <p>Explore games across different genres and save your favorites.</p>
+
+      <div class="search-box">
+        <span>🔍</span>
+        <input type="text" id="gameSearch" placeholder="Search for a game..." />
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+      <h2>Categories</h2>
+
+      <div class="category-buttons">
+        <a href="#shooters">Shooters</a>
+        <a href="#simulation">Simulation</a>
+        <a href="#adventure">Adventure</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#casual">Casual</a>
+      </div>
+    </section>
+
+    <!-- GAMES -->
+    <main class="games-container">
+      <!-- SHOOTERS -->
+      <section class="game-section" id="shooters">
+        <div class="section-title">
+          <h2>Shooters</h2>
+          <span>FPS & Action</span>
+        </div>
+
+        <div class="game-grid">
+          <!-- VALORANT -->
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/valorant.jfif" alt="Valorant" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/valorant.jfif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>Valorant</h3>
+              <p>Shooter</p>
+            </div>
+          </article>
+
+          <!-- CSGO -->
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/CSGO.jpg" alt="Counter Strike" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/CSGO.jpg')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>Counter-Strike</h3>
+              <p>Shooter</p>
+            </div>
+          </article>
+
+          <!-- ULTRAKILL -->
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/ultrakill.jfif" alt="ULTRAKILL" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/ultrakill.jfif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>ULTRAKILL</h3>
+              <p>Shooter</p>
+            </div>
+          </article>
+
+          <!-- APEX -->
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/apex.jpg" alt="Apex Legends" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/apex.jpg')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>Apex Legends</h3>
+              <p>Shooter</p>
+            </div>
+          </article>
+
+          <!-- COD -->
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/cod.jfif" alt="Call of Duty" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/cod.jfif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>Call of Duty</h3>
+              <p>Shooter</p>
+            </div>
+          </article>
+
+          <!-- FINALS -->
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/finals.png" alt="The Finals" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/finals.png')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>The Finals</h3>
+              <p>Shooter</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SIMULATION -->
+      <section class="game-section" id="simulation">
+        <div class="section-title">
+          <h2>Simulation</h2>
+          <span>Relax & Create</span>
+        </div>
+
+        <div class="game-grid">
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/vrchat.jfif" alt="VRChat" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/vrchat.jfif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>VRChat</h3>
+              <p>Simulation</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/rec.jfif" alt="Rec Room" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/rec.jfif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>Rec Room</h3>
+              <p>Simulation</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/sims.jpg" alt="The Sims" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/sims.jpg')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>The Sims</h3>
+              <p>Simulation</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/farm.avif" alt="Farming Simulator" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/farm.avif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>Farming Simulator</h3>
+              <p>Simulation</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/mart.jfif" alt="Supermarket Simulator" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/mart.jfif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>Supermarket Simulator</h3>
+              <p>Simulation</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/flight.avif" alt="Flight Simulator" />
+
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/flight.avif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+
+            <div class="game-info">
+              <h3>Flight Simulator</h3>
+              <p>Simulation</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ADVENTURE -->
+      <section class="game-section" id="adventure">
+        <div class="section-title">
+          <h2>Adventure</h2>
+          <span>Explore New Worlds</span>
+        </div>
+
+        <div class="game-grid">
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/elden.jfif" alt="Elden Ring" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/elden.jfif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Elden Ring</h3>
+              <p>Adventure</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/repo.jfif" alt="R.E.P.O." />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/repo.jfif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>R.E.P.O.</h3>
+              <p>Adventure</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/wukong.jpg" alt="Black Myth Wukong" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/wukong.jpg')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Black Myth: Wukong</h3>
+              <p>Adventure</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img
+                src="Images/minecraft.d3792486-cf98-40c0-a2c1-d6443f0e2b70"
+                alt="Minecraft"
+              />
+              <button
+                class="favorite-btn"
+                onclick="
+                  addFavorite(
+                    'Images/minecraft.d3792486-cf98-40c0-a2c1-d6443f0e2b70',
+                  )
+                "
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Minecraft</h3>
+              <p>Adventure</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img
+                src="Images/Red_Dead_Redemption_II.jpg"
+                alt="Red Dead Redemption II"
+              />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/Red_Dead_Redemption_II.jpg')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Red Dead Redemption II</h3>
+              <p>Adventure</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/batman.jpg" alt="Batman" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/batman.jpg')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Batman</h3>
+              <p>Adventure</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- STRATEGY -->
+      <section class="game-section" id="strategy">
+        <div class="section-title">
+          <h2>Strategy</h2>
+          <span>Think & Plan</span>
+        </div>
+
+        <div class="game-grid">
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/lol.jfif" alt="League of Legends" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/lol.jfif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>League of Legends</h3>
+              <p>Strategy</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/pumpkin.jfif" alt="Pumpkin" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/pumpkin.jfif')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Pumpkin</h3>
+              <p>Strategy</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/factorio.png" alt="Factorio" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/factorio.png')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Factorio</h3>
+              <p>Strategy</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img
+                src="Images/balatro.31c1e585-05c9-4f32-b695-4b900c913466"
+                alt="Balatro"
+              />
+              <button
+                class="favorite-btn"
+                onclick="
+                  addFavorite(
+                    'Images/balatro.31c1e585-05c9-4f32-b695-4b900c913466',
+                  )
+                "
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Balatro</h3>
+              <p>Strategy</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/valley.png" alt="Valley" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/valley.png')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Valley</h3>
+              <p>Strategy</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img
+                src="Images/Crusader_Kings_III.jpg"
+                alt="Crusader Kings III"
+              />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/Crusader_Kings_III.jpg')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Crusader Kings III</h3>
+              <p>Strategy</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CASUAL -->
+      <section class="game-section" id="casual">
+        <div class="section-title">
+          <h2>Casual</h2>
+          <span>Easygoing Games</span>
+        </div>
+
+        <div class="game-grid">
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/ROBLOX.jpg" alt="Roblox" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/ROBLOX.jpg')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Roblox</h3>
+              <p>Casual</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img
+                src="Images/candy.372723d8-dd1a-450a-9fed-d420e7705e4e"
+                alt="Candy"
+              />
+              <button
+                class="favorite-btn"
+                onclick="
+                  addFavorite(
+                    'Images/candy.372723d8-dd1a-450a-9fed-d420e7705e4e',
+                  )
+                "
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Candy</h3>
+              <p>Casual</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/chikon.png" alt="Chikon" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/chikon.png')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Chikon</h3>
+              <p>Casual</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/amogus.jpg" alt="Among Us" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/amogus.jpg')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Among Us</h3>
+              <p>Casual</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/fall guys.webp" alt="Fall Guys" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/fall guys.webp')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Fall Guys</h3>
+              <p>Casual</p>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="game-image">
+              <img src="Images/party.jpg" alt="Party" />
+              <button
+                class="favorite-btn"
+                onclick="addFavorite('Images/party.jpg')"
+              >
+                <img src="Images/star.png" alt="Favorite" />
+              </button>
+            </div>
+            <div class="game-info">
+              <h3>Party</h3>
+              <p>Casual</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
